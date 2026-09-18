@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'ui_v2/home_v2.dart';
 const ghofGreen = Color(0xFF1B7A4B);
 
 void main() {
@@ -111,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
     }
 
     Navigator.of(context).pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => const HomeScreen()),
+      MaterialPageRoute(builder: (_) => const HomeV2Screen()),
       (route) => false,
     );
   }
